@@ -9,14 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
     @RequestMapping("/")
     public String urls(){
-        return "ssssrg" +
-                "rsg" +
-                "srgrs" +
-                "gsgrrs,"+
-                "grsg" +
-                "rsgrsg" +
-                "srgrsg" +
-                "srgsrgsr" +
-                "grsgrsg" ;
+        return "This was a Backend project. use postMan or any api testing tools to test the project" ;
     }
 }
