@@ -16,4 +16,5 @@ public interface ShowRepo extends JpaRepository<Shows, Integer> {
 
  @Query("SELECT s.movie FROM Shows s WHERE s.theather.location = :location")
  List<Movie> findMoviesByLocation(String location);
+
 }
