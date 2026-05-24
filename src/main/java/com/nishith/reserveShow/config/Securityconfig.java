@@ -28,6 +28,12 @@ public class Securityconfig
                 .requestMatchers("/movies").permitAll()
                 .requestMatchers("/").permitAll()
                 .requestMatchers("/signup","/login").permitAll()
+                .requestMatchers(
+                        "/v3/api-docs/**",
+                        "/v3/api-docs.yaml",
+                        "/swagger-ui/**",
+                        "/swagger-ui.html"
+                ).permitAll()
 
                // .requestMatchers("/admin/**").hasRole("ADMIN")
                 .anyRequest().authenticated());
