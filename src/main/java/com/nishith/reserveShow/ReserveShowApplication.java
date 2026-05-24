@@ -1,5 +1,6 @@
 package com.nishith.reserveShow;
 
+import com.springboot.insights.tracker.RunTimeInterceptor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -9,7 +10,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class ReserveShowApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(ReserveShowApplication.class, args);
+
 	}
 
 }

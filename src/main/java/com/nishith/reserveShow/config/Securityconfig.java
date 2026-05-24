@@ -15,6 +15,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import java.util.Locale;
+
 @Configuration
 public class Securityconfig
 {
@@ -32,7 +34,8 @@ public class Securityconfig
                         "/v3/api-docs/**",
                         "/v3/api-docs.yaml",
                         "/swagger-ui/**",
-                        "/swagger-ui.html"
+                        "/swagger-ui.html",
+                        "/dashboard.html"
                 ).permitAll()
 
                // .requestMatchers("/admin/**").hasRole("ADMIN")

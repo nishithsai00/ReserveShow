@@ -82,7 +82,11 @@
 			<artifactId>jjwt-api</artifactId>
 			<version>0.12.6</version>
 		</dependency>
-
+		<dependency>
+			<groupId>io.github.nishithsai00</groupId>
+			<artifactId>spring-boot-insights</artifactId>
+			<version>1.0.1</version>
+		</dependency>
 		<!-- JJWT Impl -->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
