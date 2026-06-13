@@ -18,13 +18,13 @@ public class AutoScheduling {
     SeatSelectionRepo ssrepo;
 
 
-    @Scheduled(fixedRate = 60000)
+    @Scheduled(fixedDelay = 120000)
     @Transactional
     public void ReleaseSeats(){
         List<SeatSelection> seatSelections=ssrepo.findBySeatStatus(Status.LOCKED);
         for(SeatSelection seat:seatSelections){
             long time = ChronoUnit.SECONDS.between(seat.getLockedAt(), LocalDateTime.now());
-            if(time>300){
+            if(time>330){
                 seat.setStatus(Status.AVAILABLE);
                 seat.setBooking(null);
                 seat.setLockedAt(null);
